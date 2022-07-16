@@ -33,18 +33,14 @@
                         size="x-large"
                         class="mx-auto"
                       ></v-btn>
-                     </div>
+                    </div>
                   </v-col>
                 </div>
               </v-col>
               <div>
-              <div>
-              <v-btn
-               icon="mdi-book"
-               size="x-large"
-             
-               ></v-btn>
-              </div>
+                <div>
+                  <v-btn icon="mdi-book" size="x-large"></v-btn>
+                </div>
               </div>
             </v-row>
           </v-container>
@@ -82,7 +78,7 @@
 .red {
   color: red;
   font-family: "Inconsolata", monospace;
-    z-index: 1;
+  z-index: 1;
 }
 .white {
   color: white;
@@ -93,16 +89,15 @@
 import db from "../config/firebase";
 
 export default {
-  data(){
-      return {
-        dialog: false,
-      }
+  data() {
+    return {
+      dialog: false,
+    };
   },
   name: "Test",
 
   data: () => ({
     name: "",
-    
   }),
   firestore: {
     users: db.collection("user"),
@@ -115,8 +110,6 @@ export default {
       });
       console.log(user);
     },
-  
   },
-
 };
 </script>

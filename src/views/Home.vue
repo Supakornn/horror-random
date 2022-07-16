@@ -34,17 +34,10 @@
                       size="x-large"
                       class="mx-auto"
                     ></v-btn>
-                    </div>
+                  </div>
                 </v-col>
               </div>
             </v-col>
-            <div class="hi">
-            <v-btn
-              icon="mdi-book"
-              size="x-large"
-              class="mx-auto"
-              ></v-btn>
-            </div>
           </v-row>
         </v-container>
       </div>
@@ -93,6 +86,11 @@
 import db from "../config/firebase";
 
 export default {
+  /*data() {
+    return {
+      dialog: false,
+    };
+  },*/
   name: "Test",
 
   data: () => ({
@@ -107,9 +105,10 @@ export default {
         name: this.name,
         score: 0,
       });
-      this.$store.commit('setId', {id: user.id, score: 0, name: this.name})
-      this.$router.push("/game")
+      this.$store.commit("setId", { id: user.id, score: 0, name: this.name });
+      this.$router.push("/game");
     },
   },
+  computed: {},
 };
 </script>
