@@ -1,4 +1,4 @@
-# horro-random
+# horror-random
 
 ## Project setup
 ```
